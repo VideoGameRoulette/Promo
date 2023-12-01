@@ -6,7 +6,7 @@ import {
 
 const MobileNav = () => {
     return (
-        <footer className="xl:hidden grid grid-cols-4 col-span-1 row-span-1 bg-gray-800 gap-4 px-4">
+        <footer className="md:hidden grid grid-cols-4 col-span-1 row-span-1 bg-gray-800 gap-4 px-4">
             <div className="flex justify-center items-center">
                 <div className="sm:w-8 sm:h-8 w-6 h-6">
                     <InformationCircleIcon />

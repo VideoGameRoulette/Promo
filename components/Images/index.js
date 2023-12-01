@@ -1,6 +1,6 @@
 export const NoReset4 = () => {
     return (
-        <svg className="w-full max-w-2xl" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 403">
+        <svg className="w-full max-w-2xl min-h-[8rem]" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 403">
             <defs>
                 <clipPath id="b">
                     <rect width="1500" height="403" />

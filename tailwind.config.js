@@ -8,6 +8,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '320px', // => @media (min-width: 320px) { ... }
+      },
+      fontSize: {
+        '2xs': '0.5rem',
+        '3xs': '0.4rem',
+        '4xs': '0.3rem',
+        '5xs': '0.25rem',
+        '6xs': '0.20rem',
+      },
       backgroundImage: {
         cta: "url('/cta.jpg')",
       },
