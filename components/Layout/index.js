@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import {
     CalendarIcon,
@@ -6,12 +7,41 @@ import {
     HomeIcon,
     MapIcon
 } from '@heroicons/react/24/outline';
+import { classNames } from 'utils';
 
 const Layout = ({ children }) => {
+    const [screenSize, setScreenSize] = useState({
+        width: typeof window !== 'undefined' ? window.innerWidth : 0,
+        height: typeof window !== 'undefined' ? window.innerHeight : 0,
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        };
+
+        // Set initial screen size
+        handleResize();
+
+        // Attach event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Clean up event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []); // Empty dependency array to run the effect only once
+
     return (
         <div className="px-4 min-h-screen flex flex-col">
             {/* Main Content */}
-            <main className="flex-1 md:mb-0 mb-8">
+            <main className={classNames(
+                screenSize.height <= 520 ? "mt-16 mb-24" : "md:mt-0 mt-16",
+                "flex-1"
+            )}>
                 {children}
             </main>
             {/* Bottom Navigation (visible on mobile) */}
