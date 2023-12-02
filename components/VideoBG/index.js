@@ -4,7 +4,7 @@ const VideoBG = () => {
         autoPlay
         muted
         loop
-        className="absolute top-0 z-[-1] w-full h-full object-cover brightness-[.4]"
+        className="fixed top-0 z-[-1] w-full h-full object-cover brightness-[.4]"
     />;
 }
 
