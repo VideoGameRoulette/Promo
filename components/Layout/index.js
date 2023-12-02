@@ -9,9 +9,9 @@ import {
 
 const Layout = ({ children }) => {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="px-4 min-h-screen flex flex-col">
             {/* Main Content */}
-            <main className="flex-1 p-4 md:mb-0 mb-8">
+            <main className="flex-1 md:mb-0 mb-8">
                 {children}
             </main>
             {/* Bottom Navigation (visible on mobile) */}
