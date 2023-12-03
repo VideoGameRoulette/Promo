@@ -18,7 +18,7 @@ export default function HomeFr() {
             <a className={Styles.btn2}>Achetez votre billet</a>
           </Link>
           <Link href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=YULANDT&groupCode=CDTCN2&arrivaldate=2024-02-08&departuredate=2024-02-12&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" legacyBehavior>
-            <a className={Styles.btn3}>Réservation d'hôtel</a>
+            <a className={Styles.btn3}>Réservation d&apos;hôtel</a>
           </Link>
         </div>
       </div>
